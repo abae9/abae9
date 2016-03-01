@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Week 6 Questions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <ul class="nav nav-tabs" role="tablist">
+
+            <li role="presentation" class="active"><a href="#Q6" aria-controls="Q6" role="tab" data-toggle="tab">Q6</a></li>
+            <li role="presentation"><a href="#Q7" aria-controls="Q7" role="tab" data-toggle="tab">Q7</a></li>
+            <li role="presentation"><a href="#Q8" aria-controls="Q8" role="tab" data-toggle="tab">Q8</a></li>
+            <li role="presentation"><a href="#Q9" aria-controls="Q9" role="tab" data-toggle="tab">Q9</a></li>
+        </ul>
+
+
+        <div class="tab-content">
+
+
+            <div role="tabpanel" class="tab-pane active" id="Q6">
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <pre>
+                          function range(start, end) {
+            var arr = [];
+            if (start <= end) {
+            for (start; start <= end; start++) {
+            arr.push(start);
+            }
+            }
+            return arr;
+            }
+            $("‪Q6button‬").on("click", function() {
+            var rangeAnswer = range(3, 5);start and end parameters
+            $("‪Q6result‬").html("Answer is:" + rangeAnswer.join());
+            });
+                </pre>
+                    </div>
+
+                    <div class="col-md-12">
+                        <button id="question6" class="btn btn-default" type="submit">Run Code</button>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div id="answerQuestion6"></div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- question 2 -->
+            <div role="tabpanel" class="tab-pane" id="Q7">
+                <div class="row">
+                    <div class="col-md-12">
+                        <pre>function sum(array) {
+var sm = 0;
+for (var i = 0; i < array.length; i++) {
+sm += parseInt(array[i]);
+}
+return sm;
+}
+
+$("Q7button").on("click", function() {
+var startNum = prompt ("FIRST NUMBER")
+var endNum = prompt("SECOND NUMBER")
+
+var sumTotal = sum(range(startNum,endNum))
+$("Q7result").html( "Answer is:" + " " + sumTotal);
+});
+}
+
+                </pre>
+                    </div>
+                    <div class="col-md-12">
+                        <button id="question7" class="btn btn-default" type="submit">Run Code</button>
+                    </div>
+                    <div class="col-md-12">
+                        <div id="answerQuestion7"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Q8">
+                <div class="row">
+                    <div class="col-md-12">
+                        <pre>  function range (end,start){
+var arr = [];
+//arr.push(5);
+//arr.push(1);
+for (end; end >= start; end--){
+arr.push(end);
+}
+return arr;
+}
+$("‪Q8button‬").on("click", function() {
+
+var reverseArray = range(5,1);
+$("‪Q8result‬").html("Answer is: " + reverseArray.join());
+});
+
+            </pre>
+                    </div>
+                    <div class="col-md-12">
+                        <button id="question8" class="btn btn-default" type="submit">Run Code</button>
+                    </div>
+                    <div class="col-md-12">
+                        <div id="answerQuestion8"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Q9">
+                <div class="row">
+                    <div class="col-md-12">
+                        <pre>  function range (end,start){
+var arr = [];
+//arr.push(5);
+//arr.push(1);
+for (end; end >= start; end--){
+arr.push(end);
+}
+return arr;
+}
+$("‪Q9button‬").on("click", function() {
+//var reverseArray = range(5,1);
+var reverseArrayInPlace =range(5,1);
+$("‪Q9result‬").html("Answer is: " + reverseArrayInPlace);
+});
+
+        </pre>
+                    </div>
+                    <div class="col-md-12">
+                        <button id="question9" class="btn btn-default" type="submit">Run Code</button>
+                    </div>
+                    <div class="col-md-12">
+                        <div id="answerQuestion9"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <script>
+                $(document).ready(function() {
+
+                    function doQuestion1() {
+                        var arr = [23, 46, 34, 76],
+                            total = 0;
+
+                        for (var i = 0; i < arr.length; i++) {
+
+                            total += arr[i];
+                        }
+
+                        $("#answerQuestion1").html(total);
+                    }
+
+                    function doQuestion2() {
+
+                    }
+
+                    $("#question1").on("click", function() {
+                        doQuestion1();
+                    })
+
+                    $("#question2").on("click", function() {
+                        doQuestion2();
+                    })
+
+                })
+            </script>
+</body>
+
+</html>

@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-  var circleOrEx = "o"; // what does this variable represent
-  var isGameInProgress = true; // what does this variable represent
-  var winningCombos = { // what does this variable represent; explain what the keys and values represent
+  var circleOrEx = "o"; // this represents the o
+  var isGameInProgress = true; // game will run
+  var winningCombos = { // this represents array of different winning combos
     0: [ //0 is key
       [1, 2], //this multiDimensional Array is values
       [3, 6],
@@ -64,7 +64,7 @@ $(document).ready(function() {
 
   });
 
-  // Explain what this event does
+  // When button is cliked, it resets the game
   $("#newGame").on("click", function() {
 
     var boardSquares = $("#board").find("div"); //what is this variable

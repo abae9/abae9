@@ -81,19 +81,20 @@
                     <div class="col-md-12">
 
                         <pre>
-                          function range(start, end) {
-            var arr = [];
-            if (start <= end) {
-            for (start; start <= end; start++) {
-            arr.push(start);
-            }
-            }
-            return arr;
-            }
-            $("‪Q6button‬").on("click", function() {
-            var rangeAnswer = range(3, 5);start and end parameters
-            $("‪Q6result‬").html("Answer is:" + rangeAnswer.join());
-            });
+                          var sm = 0;
+                 for (var i = 0; i < array.length; i++) {
+                   sm += parseInt(array[i]);
+                 }
+                 return sm;
+               }
+
+               $("#q7button").on("click", function() {
+                 var startNum = prompt ("Please enter the first number")
+                 var endNum = prompt("Please enter the second number")
+
+                 var sumTotal = sum(range(startNum,endNum))
+               $("#q7result").html( "Answer is:" + " " + sumTotal);
+               });
                 </pre>
                     </div>
 
@@ -111,22 +112,20 @@
             <div role="tabpanel" class="tab-pane" id="Q7">
                 <div class="row">
                     <div class="col-md-12">
-                        <pre>function sum(array) {
-var sm = 0;
-for (var i = 0; i < array.length; i++) {
-sm += parseInt(array[i]);
-}
-return sm;
-}
+                        <pre>   var rev = []
+                for( var i = array.length-1; i >= 0; i--){
 
-$("Q7button").on("click", function() {
-var startNum = prompt ("FIRST NUMBER")
-var endNum = prompt("SECOND NUMBER")
+                  rev.push(array[i])
+                }
+                return rev
+              }
 
-var sumTotal = sum(range(startNum,endNum))
-$("Q7result").html( "Answer is:" + " " + sumTotal);
-});
-}
+
+              $("#q8button").on("click", function() {
+
+                var list = ["Apples", "Bananas", "Oranges"]
+                $("#q8result").html("Answer is:"+" "+ reverseArray(list));
+              });
 
                 </pre>
                     </div>
@@ -142,20 +141,20 @@ $("Q7result").html( "Answer is:" + " " + sumTotal);
             <div role="tabpanel" class="tab-pane" id="Q8">
                 <div class="row">
                     <div class="col-md-12">
-                        <pre>  function range (end,start){
-var arr = [];
-//arr.push(5);
-//arr.push(1);
-for (end; end >= start; end--){
-arr.push(end);
-}
-return arr;
-}
-$("‪Q8button‬").on("click", function() {
+                        <pre>   function arrayReverseInPlace(array) {
+                for (var i = 0; i < array.length/2; i++) {
+                  var temp = array[i];
+                  array[i] = array[array.length - 1 - i];
+                  array[array.length-1-i] = temp;
 
-var reverseArray = range(5,1);
-$("‪Q8result‬").html("Answer is: " + reverseArray.join());
-});
+                }
+              }
+
+              $("#q9button").on("click", function() {
+                var listA = ["a", "b", "c"];
+                var ans = reverseArray(listA)
+                $("#q9result").html("The reverse of a, b, c is" + " " + ans);
+              });
 
             </pre>
                     </div>
@@ -171,20 +170,25 @@ $("‪Q8result‬").html("Answer is: " + reverseArray.join());
             <div role="tabpanel" class="tab-pane" id="Q9">
                 <div class="row">
                     <div class="col-md-12">
-                        <pre>  function range (end,start){
-var arr = [];
-//arr.push(5);
-//arr.push(1);
-for (end; end >= start; end--){
-arr.push(end);
-}
-return arr;
-}
-$("‪Q9button‬").on("click", function() {
-//var reverseArray = range(5,1);
-var reverseArrayInPlace =range(5,1);
-$("‪Q9result‬").html("Answer is: " + reverseArrayInPlace);
-});
+                        <pre>   $(document).ready(function () {
+            // code in the general function to allow question one to run
+            //this function prints a triangle of hashtags
+            function getTriangle() {
+                var str = "";
+                // the string goes here
+                for (var i = 1; i <= 6; i++) {
+                    //write i stars + <br/>
+                    for (var j = 1; j <= i; j++) {
+                        str = str + "#"
+                    }
+                    str = str + "</br>"
+                }
+                $("#q1result").html(str);
+            }
+            $("#q1Button").on("click", function () {
+                getTriangle();
+            });
+
 
         </pre>
                     </div>
@@ -198,9 +202,9 @@ $("‪Q9result‬").html("Answer is: " + reverseArrayInPlace);
                 </div>
             </div>
 
-            <script>
+<script>
         $(document).ready(function () {
-            
+
             $("#q6button").on("click", function () {
                 $("#q6result").html();
             });

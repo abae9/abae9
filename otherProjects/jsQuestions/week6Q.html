@@ -22,83 +22,115 @@
     </ul>
 
 
-        <div class="tab-content">
-
-
-          <div id="q6" class="tab-pane fade in active">
-          <h3>Question 6</h3>
+    <div class="tab-content">
+                    <!-- Button Div -->
+                    <div role="tabpanel" class="tab-pane" id="q6">
+                <div class="row">
+                    <div class="col-md-12">
                         <pre>
-                          function range(start, end) {
+                          <!-- QUESTION SIX PRE CODE -->
+                         function range(start, end) {
 
-               var arr = [];
-               if (start <= end) { // find out how to do an if NaN
-                 for (start; start <= end; start++) {
-                   arr.push(start);
+                var arr = [];
+                if (start <= end) { // find out how to do an if NaN
+                  for (start; start <= end; start++) {
+                    arr.push(start);
 
-                 }
-               }
-               return arr;
-             }
-
-             $("#q6button").on("click", function() {
-               var numberOne= prompt("Please enter the first number")
-               var numberTwo= prompt("Please enter the second number")
-
-               var rangeAnswer = range(numberOne, numberTwo);
-               $("#q6result").html("Answer is:" + rangeAnswer.join());
-             });
-                </pre>
-                <button id="question6" class="btn btn-default" type="submit">Run Code</button>
-                <div id="q6Answer"></div>
-      <!--put answer here-->
-    </div>
-            <div id="q7" class="tab-pane fade in active">
-            <h3>Question 7</h3>
-                        <pre>                   function sum(array) {
-                var sm = 0;
-                for (var i = 0; i < array.length; i++) {
-                  sm += parseInt(array[i]);
+                  }
                 }
-                return sm;
+                return arr;
               }
 
-              $("#q7button").on("click", function() {
-                var startNum = prompt ("Please enter the first number")
-                var endNum = prompt("Please enter the second number")
+              $("#q6button").on("click", function() {
+                var numberOne= prompt("Please enter the first number")
+                var numberTwo= prompt("Please enter the second number")
 
-                var sumTotal = sum(range(startNum,endNum))
-              $("#q7result").html( "Answer is:" + " " + sumTotal);
+                var rangeAnswer = range(numberOne, numberTwo);
+                $("#q6result").html("Answer is:" + rangeAnswer.join());
               });
-
                 </pre>
-                <button id="question7" class="btn btn-default" type="submit">Run Code</button>
-                <div id="q7Answer"></div>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- Button Div -->
+                        <button id="q6button" class="btn btn-primary" type="submit">Do Question 6</button>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- Results Div -->
+                        <div id="q6result"></div>
+                      </div>
+              </div>
+          </div>
+        <div role="tabpanel" class="tab-pane" id="q7">
+            <div class="row">
+                <div class="col-md-12">
+                    <pre>
+                      <!-- QUESTION SEVEN PRE CODE -->
+                            function sum(array) {
+            var sm = 0;
+            for (var i = 0; i < array.length; i++) {
+              sm += parseInt(array[i]);
+            }
+            return sm;
+          }
+
+          $("#q7button").on("click", function() {
+            var startNum = prompt ("Please enter the first number")
+            var endNum = prompt("Please enter the second number")
+
+            var sumTotal = sum(range(startNum,endNum))
+          $("#q7result").html( "Answer is:" + " " + sumTotal);
+          });
+
+        </pre>
+                </div>
+                <div class="col-md-12">
+                    <!-- Button Div -->
+                    <button id="q7button" class="btn btn-primary" type="submit">Do Question 7</button>
+                </div>
+                <div class="col-md-12">
+                    <!-- Results Div -->
+                    <div id="q7result"></div>
+                </div>
             </div>
-            <div id="q8" class="tab-pane fade in active">
-            <h3>Question 8</h3>
-                        <pre>   function reverseArray(array){
-                var rev = []
-                for( var i = array.length-1; i >= 0; i--){
+        </div>
+        <div role="tabpanel" class="tab-pane" id="q8">
+            <div class="row">
+                <div class="col-md-12">
+                    <pre>
+                      <!-- QUESTION EIGHT PRE CODE -->
+                  function reverseArray(array){
+            var rev = []
+            for( var i = array.length-1; i >= 0; i--){
 
-                  rev.push(array[i])
-                }
-                return rev
-              }
+              rev.push(array[i])
+            }
+            return rev
+          }
 
 
-              $("#q8button").on("click", function() {
+          $("#q8button").on("click", function() {
 
-                var list = ["Apples", "Bananas", "Oranges"]
-                $("#q8result").html("Answer is:"+" "+ reverseArray(list));
-              });
-
+            var list = ["Apples", "Bananas", "Oranges"]
+            $("#q8result").html("Answer is:"+" "+ reverseArray(list));
+          });
             </pre>
-            <button id="question8" class="btn btn-default" type="submit">Run Code</button>
-            <div id="q8Answer"></div>
+                </div>
+                <div class="col-md-12">
+                    <!-- Button Div -->
+                    <button id="q8button" class="btn btn-primary" type="submit">Do Question 8</button>
+                </div>
+                <div class="col-md-12">
+                    <!-- Results Div -->
+                    <div id="q8result"></div>
+                </div>
             </div>
-            <div id="q9" class="tab-pane fade in active">
-            <h3>Question 9</h3>
-                        <pre>    function arrayReverseInPlace(array) {
+        </div>
+        <div role="tabpanel" class="tab-pane" id="q9">
+                <div class="row">
+                    <div class="col-md-12">
+                        <pre>
+                          <!-- QUESTION NINE PRE CODE -->
+                        function arrayReverseInPlace(array) {
                 for (var i = 0; i < array.length/2; i++) {
                   var temp = array[i];
                   array[i] = array[array.length - 1 - i];
@@ -112,107 +144,111 @@
                 var ans = reverseArray(listA)
                 $("#q9result").html("The reverse of a, b, c is" + " " + ans);
               });
-
-
-        </pre>
-        <button id="question9" class="btn btn-default" type="submit">Run Code</button>
-        <div id="q9Answer"></div>
+                </pre>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- Button Div -->
+                        <button id="q9button" class="btn btn-primary" type="submit">Do Question 9</button>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- Results Div -->
+                        <div id="q9result"></div>
+                </div>
             </div>
-
+        </div>
+    </div>
+</div>
 <script>
-
-        $(document).ready(function () {
-
-            $("#q6button").on("click", function () {
-                $("#q6result").html();
-            });
-            //put code under here.
-            function range(start, end) {
-
-                var arr = [];
-                if (start <= end) { // find out how to do an if NaN
-                    for (start; start <= end; start++) {
-                        arr.push(start);
-
-                    }
-                }
-                return arr;
-            }
-
-            $("#q6button").on("click", function () {
-                var numberOne = prompt("Please enter the first number")
-                var numberTwo = prompt("Please enter the second number")
-
-                var rangeAnswer = range(numberOne, numberTwo);
-                $("#q6result").html("Answer is:" + rangeAnswer.join());
-            });
-
-            $("#q7button").on("click", function () {
-                $("#q7result").html();
-            });
-            //put code under here.
-            function sum(array) {
-                var sm = 0;
-                for (var i = 0; i < array.length; i++) {
-                    sm += parseInt(array[i]);
-                }
-                return sm;
-            }
-
-            $("#q7button").on("click", function () {
-                var startNum = prompt("Please enter the first number")
-                var endNum = prompt("Please enter the second number")
-
-                var sumTotal = sum(range(startNum, endNum))
-                $("#q7result").html("Answer is:" + " " + sumTotal);
-            });
+    $(document).ready(function () {
 
 
-
-            $("#q8button").on("click", function () {
-                $("#q8result").html();
-            });
-            //put code under here.
-            function reverseArray(array) {
-                var rev = []
-                for (var i = array.length - 1; i >= 0; i--) {
-
-                    rev.push(array[i])
-                }
-                return rev
-            }
-
-
-            $("#q8button").on("click", function () {
-
-                var list = ["Apples", "Bananas", "Oranges"]
-                $("#q8result").html("Answer is:" + " " + reverseArray(list));
-            });
-            $("#q9button").on("click", function () {
-                $("#q9result").html();
-            });
-            //put code under here.
-            function arrayReverseInPlace(array) {
-                for (var i = 0; i < array.length / 2; i++) {
-                    var temp = array[i];
-                    array[i] = array[array.length - 1 - i];
-                    array[array.length - 1 - i] = temp;
-
-                }
-            }
-
-            $("#q9button").on("click", function () {
-                var listA = ["a", "b", "c"];
-                var ans = reverseArray(listA)
-                $("#q9result").html("The reverse of a, b, c is" + " " + ans);
-            });
-
-
+        $("#q6button").on("click", function () {
+            $("#q6result").html();
         });
-    </script>
-	</div>
-	</div>
-	</div>
+        //put code under here.
+        function range(start, end) {
+
+            var arr = [];
+            if (start <= end) { // find out how to do an if NaN
+                for (start; start <= end; start++) {
+                    arr.push(start);
+
+                }
+            }
+            return arr;
+        }
+
+        $("#q6button").on("click", function () {
+            var numberOne = prompt("Please enter the first number")
+            var numberTwo = prompt("Please enter the second number")
+
+            var rangeAnswer = range(numberOne, numberTwo);
+            $("#q6result").html("Answer is:" + rangeAnswer.join());
+        });
+
+        $("#q7button").on("click", function () {
+            $("#q7result").html();
+        });
+        //put code under here.
+        function sum(array) {
+            var sm = 0;
+            for (var i = 0; i < array.length; i++) {
+                sm += parseInt(array[i]);
+            }
+            return sm;
+        }
+
+        $("#q7button").on("click", function () {
+            var startNum = prompt("Please enter the first number")
+            var endNum = prompt("Please enter the second number")
+
+            var sumTotal = sum(range(startNum, endNum))
+            $("#q7result").html("Answer is:" + " " + sumTotal);
+        });
+
+
+
+        $("#q8button").on("click", function () {
+            $("#q8result").html();
+        });
+        //put code under here.
+        function reverseArray(array) {
+            var rev = []
+            for (var i = array.length - 1; i >= 0; i--) {
+
+                rev.push(array[i])
+            }
+            return rev
+        }
+
+
+        $("#q8button").on("click", function () {
+
+            var list = ["Apples", "Bananas", "Oranges"]
+            $("#q8result").html("Answer is:" + " " + reverseArray(list));
+        });
+        $("#q9button").on("click", function () {
+            $("#q9result").html();
+        });
+        //put code under here.
+        function arrayReverseInPlace(array) {
+            for (var i = 0; i < array.length / 2; i++) {
+                var temp = array[i];
+                array[i] = array[array.length - 1 - i];
+                array[array.length - 1 - i] = temp;
+
+            }
+        }
+
+        $("#q9button").on("click", function () {
+            var listA = ["a", "b", "c"];
+            var ans = reverseArray(listA)
+            $("#q9result").html("The reverse of a, b, c is" + " " + ans);
+        });
+
+
+    });
+</script>
 </body>
 
 </html>

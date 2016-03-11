@@ -11,15 +11,17 @@
 
 <body>
     <div class="container">
-      <div class="bs-example">
-
-        <ul class="nav nav-tabs">
-
-          <li class="active"><a data-toggle="tab" href="#q1">Q1</a></li>
-      <li><a data-toggle="tab" href="#q2">Q2</a></li>
-      <li><a data-toggle="tab" href="#q3">Q3</a></li>
-      <li><a data-toggle="tab" href="#q4">Q4</a></li>
-      <li><a data-toggle="tab" href="#q5">Q5</a></li>
+      <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#q1" aria-controls="home" role="tab" data-toggle="tab">Q1</a>
+          </li>
+          <li role="presentation"><a href="#q2" aria-controls="profile" role="tab" data-toggle="tab">Q2</a>
+                </li>
+                <li role="presentation"><a href="#q3" aria-controls="messages" role="tab" data-toggle="tab">Q3</a>
+                </li>
+                <li role="presentation"><a href="#q4" aria-controls="settings" role="tab" data-toggle="tab">Q4</a>
+                </li>
+                <li role="presentation"><a href="#q5" aria-controls="settings" role="tab" data-toggle="tab">Q5</a>
+                </li>
     </ul>
 
 
@@ -49,7 +51,7 @@
                           });
                 </pre>
 
-                        <button id="#q1Button" class="btn btn-default" type="button">Run Code</button>
+                        <button id="q1Button" class="btn btn-default" type="submit">Run Code</button>
                         <div id="q1result"></div>
 
                     </div>
@@ -83,7 +85,7 @@
      });
    </pre>
 
-           <button id="#q2button" class="btn btn-default" type="submit">Run Code</button>
+           <button id="q2button" class="btn btn-default" type="submit">Run Code</button>
            <div id="q2result"></div>
        </div>
 
@@ -117,7 +119,7 @@
       });
 
             </pre>
-            <button id="#q3button" class="btn btn-default" type="submit">Run Code</button>
+            <button id="q3button" class="btn btn-default" type="submit">Run Code</button>
             <div id="q3result"></div>
         </div>
         <div id="q4" class="tab-pane fade in active">
@@ -136,7 +138,7 @@
 console.log(countBs("BBC"));
 
         </pre>
-        <button id="#q4button" class="btn btn-default" type="submit">Run Code</button>
+        <button id="q4button" class="btn btn-default" type="submit">Run Code</button>
         <div id="q4result"></div>
     </div>
 
@@ -156,7 +158,7 @@ console.log(countChar("kakkerlak", "k"));
 
 
       </pre>
-      <button id="#q5button" class="btn btn-default" type="submit">Run Code</button>
+      <button id="q5button" class="btn btn-default" type="submit">Run Code</button>
       <div id="q5result"></div>
       </div>
     </div>
@@ -182,28 +184,6 @@ $(document).ready(function () {
                 getTriangle();
             });
 
-
-
-            function printFooBar() {
-                var print = "";
-                var number = Number(1);
-                for (i = Number(1); i <= 100; i++) {
-                    if (i % 3 == 0 && i % 5 == 0) {
-                        print = print + "FooBar" + "<br/>";
-                    } else if (i % 3 == 0) {
-                        print = print + "Foo" + "<br/>";
-                    } else if (i % 5 == 0) {
-                        print = print + "Bar " + "<br/>";
-                    } else {
-                        print = print + i + "<br/>";
-                    }
-                }
-
-
-                $("#q2result").html(print);
-            }
-            $("#q2button").on("click", function () {
-                printFooBar();
 
                 function printFooBar() {
                     var print = "";

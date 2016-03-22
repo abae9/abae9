@@ -1,5 +1,5 @@
 //get the file (replace with your own url)
-$.get("http://abae9.github.io/otherProjects/partials/nav.html", function(data) {
+$.get("http://abae9.github.io/partials/nav.html", function(data) {
 
   $(document).ready(function() {
 

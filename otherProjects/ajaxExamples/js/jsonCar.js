@@ -1,15 +1,15 @@
 $(document).ready(function(){
 
-    $.getJSON("jsonDatabase/car.json",function(data){
+    $.getJSON("jsonDatabase/bun.json",function(data){
         console.dir(data);
 
         var html = "";
         $.each(data, function(index, item){
         html += '<div class="col-md-4 bun">' +
-            '<div class="carName">' +item.name+'</div>'+
-            '<div class="carType">' +item.type+'</div>'+
-            '<div class="carColour">' +item.brand+'</div>'+
-            '<img class="carImg" src="'+item.image + '"/>'+
+            '<div class="bunName">' +item.name+'</div>'+
+            '<div class="bunType">' +item.type+'</div>'+
+            '<div class="bunGender">' +item.gender+'</div>'+
+            '<img class="bunImg" src="'+item.image + '"/>'+
             '<div class="commentsContainer">';
             $.each(item.comments, function(index, item){
             html += '<div class="renterName">' + item.username + '</div>' +
@@ -32,15 +32,15 @@ $(document).ready(function(){
         html += '</div>' + //commentsContainer
              '</div>'; //col-md-4
         }) //each cat
-        $("#carData").append(html);
+        $("#bunData").append(html);
     })
 })
 /*
-// one per car
+// one per bun
 <div class="col-md-4 bun">
-<div class="carName"></div>
-<div class="carType"></div>
-<div class="carColour"></div>
+<div class="bunName"></div>
+<div class="bunType"></div>
+<div class="bunGender"></div>
 <img src=""/>
     <div class="commentsContainer">
         <div class="renterName"></div>
@@ -48,5 +48,5 @@ $(document).ready(function(){
         <div class="renterStars"></div>
         //5 stars, some empty
     </div> //end starts
-</div> //end car
+</div> //end bun
 */

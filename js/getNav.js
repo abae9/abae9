@@ -1,4 +1,4 @@
-$.get("http://pinkbun.github.io/partials/nav.html", function(data){
+$.get("http://abae9.github.io/partials/nav.html", function(data){
 
 $(document).ready(function() {
 

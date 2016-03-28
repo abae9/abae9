@@ -1,0 +1,49 @@
+[
+{
+"type":"Sports",
+"name":"Subaru BRZ",
+"colour":"Blue",
+"image":"images/brz.png",
+"comments" : [{"username":"Amaradici",
+              "stars": 5,
+              "comment": "Fits in my hand"
+              },{"username":"NimbleYew",
+              "stars": 3,
+              "comment": "Small!"
+              },{"username":"SisterStorm",
+              "stars": 3,
+              "comment": "He licks me so much"
+              }]
+},
+{
+"type":"SUV",
+"name":"Chevrolet Equinox",
+"colour":"Silver",
+"image":"images/equinox.jpg",
+"comments" : [{"username":"Goghost",
+              "stars": 5,
+              "comment": "Ears are the best part"
+              },{"username":"SleepingGeneral",
+              "stars": 4,
+              "comment": "Adorable"
+              },{"username":"KeyboardBlueberry",
+              "stars": 5,
+              "comment": "Snuggles on my lap"
+              }]
+},
+{
+"type":"Mid-Sedan",
+"name":"Honda Accord",
+"colour":"Dark Grey",
+"image":"images/accord.jpg",
+"comments" : [{"username":"WildGod",
+              "stars": 5,
+              "comment": "Looks liek a cute small lion"
+              },{"username":"Pandaisy",
+              "stars": 3,
+              "comment": "Pretty curious"
+              },{"username":"Eurobot",
+              "stars": 3,
+              "comment": "Would do it again"
+              }]
+ }]

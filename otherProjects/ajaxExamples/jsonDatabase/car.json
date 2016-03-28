@@ -4,15 +4,15 @@
 "name":"Subaru BRZ",
 "colour":"Blue",
 "image":"images/brz.png",
-"comments" : [{"username":"Amaradici",
+"comments" : [{"username":"Subaruwrxfan",
               "stars": 5,
-              "comment": "Fits in my hand"
-              },{"username":"NimbleYew",
+              "comment": "I love Subarus!"
+              },{"username":"ben04124",
+              "stars": 4,
+              "comment": "Fun to drive, but lacks space."
+              },{"username":"ilovefastcars",
               "stars": 3,
-              "comment": "Small!"
-              },{"username":"SisterStorm",
-              "stars": 3,
-              "comment": "He licks me so much"
+              "comment": "Very underpowered sports car."
               }]
 },
 {
@@ -20,15 +20,15 @@
 "name":"Chevrolet Equinox",
 "colour":"Silver",
 "image":"images/equinox.jpg",
-"comments" : [{"username":"Goghost",
+"comments" : [{"username":"beatrice021",
               "stars": 5,
-              "comment": "Ears are the best part"
-              },{"username":"SleepingGeneral",
-              "stars": 4,
-              "comment": "Adorable"
-              },{"username":"KeyboardBlueberry",
-              "stars": 5,
-              "comment": "Snuggles on my lap"
+              "comment": "Best family suv ever!"
+              },{"username":"twofortwo",
+              "stars": 2,
+              "comment": "It was a good car until it started having engine problems..."
+              },{"username":"suvlover",
+              "stars": 3,
+              "comment": "Not the best but does what it does."
               }]
 },
 {
@@ -36,14 +36,14 @@
 "name":"Honda Accord",
 "colour":"Dark Grey",
 "image":"images/accord.jpg",
-"comments" : [{"username":"WildGod",
+"comments" : [{"username":"Smoothrider",
               "stars": 5,
-              "comment": "Looks liek a cute small lion"
-              },{"username":"Pandaisy",
-              "stars": 3,
-              "comment": "Pretty curious"
-              },{"username":"Eurobot",
-              "stars": 3,
-              "comment": "Would do it again"
+              "comment": "Rides smoooth."
+              },{"username":"familyman",
+              "stars": 4,
+              "comment": "Very nice car! Wish it came with a different colour!"
+              },{"username":"vtecvroom",
+              "stars": 5,
+              "comment": "I love all Hondas!"
               }]
  }]

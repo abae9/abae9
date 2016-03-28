@@ -8,7 +8,7 @@ $(document).ready(function(){
         html += '<div class="col-md-4 bun">' +
             '<div class="carName">' +item.name+'</div>'+
             '<div class="carType">' +item.type+'</div>'+
-            '<div class="carGender">' +item.brand+'</div>'+
+            '<div class="carColour">' +item.brand+'</div>'+
             '<img class="carImg" src="'+item.image + '"/>'+
             '<div class="commentsContainer">';
             $.each(item.comments, function(index, item){
@@ -38,9 +38,9 @@ $(document).ready(function(){
 /*
 // one per car
 <div class="col-md-4 bun">
-<div class="bunName"></div>
-<div class="bunType"></div>
-<div class="bunBrand"></div>
+<div class="carName"></div>
+<div class="carType"></div>
+<div class="carColour"></div>
 <img src=""/>
     <div class="commentsContainer">
         <div class="renterName"></div>

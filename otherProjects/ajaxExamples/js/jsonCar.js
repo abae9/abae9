@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $.getJSON("jsonDatabase/bun.json",function(data){
+    $.getJSON("jsonDatabase/car.json",function(data){
         console.dir(data);
 
         var html = "";

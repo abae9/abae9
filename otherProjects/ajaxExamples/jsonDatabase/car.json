@@ -19,7 +19,7 @@
 "type":"SUV",
 "name":"Chevrolet Equinox",
 "colour":"Silver",
-"image":"images/equinox.jpg",
+"image":"images/equinox.png",
 "comments" : [{"username":"beatrice021",
               "stars": 5,
               "comment": "Best family suv ever!"
@@ -35,7 +35,7 @@
 "type":"Mid-Sedan",
 "name":"Honda Accord",
 "colour":"Dark Grey",
-"image":"images/accord.jpg",
+"image":"images/accord.png",
 "comments" : [{"username":"Smoothrider",
               "stars": 5,
               "comment": "Rides smoooth."

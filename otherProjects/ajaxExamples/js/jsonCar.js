@@ -8,7 +8,7 @@ $(document).ready(function(){
         html += '<div class="col-md-4 bun">' +
             '<div class="carName">' +item.name+'</div>'+
             '<div class="carType">' +item.type+'</div>'+
-            '<div class="carColour">' +item.gender+'</div>'+
+            '<div class="carColour">' +item.colour+'</div>'+
             '<img class="carImg" src="'+item.image + '"/>'+
             '<div class="commentsContainer">';
             $.each(item.comments, function(index, item){
@@ -32,7 +32,7 @@ $(document).ready(function(){
         html += '</div>' + //commentsContainer
              '</div>'; //col-md-4
         }) //each cat
-        $("#bunData").append(html);
+        $("#carData").append(html);
     })
 })
 /*

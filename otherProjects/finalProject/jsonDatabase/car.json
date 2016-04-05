@@ -1,0 +1,49 @@
+[
+{
+"type":"Sports",
+"name":"Subaru BRZ",
+"colour":"Blue",
+"image":"images/brz.png",
+"comments" : [{"username":"Subaruwrxfan",
+              "stars": 5,
+              "comment": "I love Subarus!"
+              },{"username":"ben04124",
+              "stars": 4,
+              "comment": "Fun to drive, but lacks space."
+              },{"username":"ilovefastcars",
+              "stars": 3,
+              "comment": "Very underpowered sports car."
+              }]
+},
+{
+"type":"SUV",
+"name":"Chevrolet Equinox",
+"colour":"Silver",
+"image":"images/equinox.png",
+"comments" : [{"username":"beatrice021",
+              "stars": 5,
+              "comment": "Best family suv ever!"
+              },{"username":"twofortwo",
+              "stars": 2,
+              "comment": "It was a good car until it started having engine problems..."
+              },{"username":"suvlover",
+              "stars": 3,
+              "comment": "Not the best but does what it does."
+              }]
+},
+{
+"type":"Mid-Sedan",
+"name":"Honda Accord",
+"colour":"Dark Grey",
+"image":"images/accord.png",
+"comments" : [{"username":"Smoothrider",
+              "stars": 5,
+              "comment": "Rides smoooth."
+              },{"username":"familyman",
+              "stars": 4,
+              "comment": "Very nice car! Wish it came with a different colour!"
+              },{"username":"vtecvroom",
+              "stars": 5,
+              "comment": "I love all Hondas!"
+              }]
+ }]

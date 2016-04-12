@@ -21,17 +21,17 @@ $(document).ready(function() {
 
       });
 
-    } else if (partial === "movPage") {
+    } else if (partial === "fleetPage") {
       $.getJSON("jsonDatabase/final.json", function(data) {
         console.dir(data);
 
         var html = "";
         $.each(data, function(index, item) {
           html += '<div class="col-md-4 col-xs-8 col-lg-4 col-sm-4 mov">' +
-            '<div class="movName">' + item.name + '</div>' +
-            '<div class="movType">' + item.type + '</div>' +
-            '<img class="movImg" src="' + item.image + '"/>' +
-            '<div class="movSum">' + item.summary + '</div>' +
+            '<div class="carName">' + item.name + '</div>' +
+            '<div class="carType">' + item.type + '</div>' +
+            '<img class="carImg" src="' + item.image + '"/>' +
+            '<div class="mcarSum">' + item.summary + '</div>' +
             '<div class="commentsContainer">';
           $.each(item.comments, function(index, item) {
             html += '<div class="renterName">' + item.username + '</div>' +

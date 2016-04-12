@@ -1,0 +1,123 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @abae9
+ Watch 1
+  Star 0
+  Fork 0 pinkbun/pinkbun.github.io
+ Code  Issues 0  Pull requests 0  Wiki  Pulse  Graphs
+Branch: master Find file Copy pathpinkbun.github.io/myClonedFolder/otherProjects/finalProject/css/style.css
+8dec240  2 days ago
+@pinkbun pinkbun mhm
+1 contributor
+RawBlameHistory     105 lines (89 sloc)  1.65 KB
+/* Import Font */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,100|Fjalla+One);
+/* BG */
+body {
+    background-image: url("../images/bg.png");
+    font-family: 'Roboto';
+}
+
+h1 {
+    font-family: "Fjalla One";
+    font-size: 400%;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Fjalla One";
+    font-size: 350%;
+    text-transform: uppercase;
+}
+
+.logo img { height: 30px; }
+.container {
+    background: white;
+}
+/* Footer styling */
+footer {
+    text-align: center;
+}
+
+.hot {
+    float: right;
+    width: 20%;
+}
+
+.float-l {
+    float: left;
+    margin: 10px;
+}
+/* Nav styling */
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+    color: #fff;
+    background-color: #dadada;
+}
+
+.nav-pills a {
+    color: black;
+}
+
+.nav-pills {
+    font-size: 160%;
+    text-transform: uppercase;
+}
+/* Carousel styling */
+.carousel {
+    background: #fff;
+    margin-top: 20px;
+}
+
+.carousel .item img {
+    margin: 0 auto;
+    /* Align slide image horizontally center */
+}
+
+.bs-example {
+    margin: 20px;
+}
+
+/* Makes errors black */
+.carousel-control {
+    background-color: none;
+    color: black;
+}
+/* Clear side gradients */
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+/* Mov styling */
+
+    .movImg {
+        width: 100%;
+    }
+
+    .movName {
+        font-family: 'Roboto','Sans-Serif';
+        font-size: 200%;
+    }
+
+    .movType, .movSum, .commentsContainer {
+        font-family: 'Roboto','Sans-Serif';
+        font-size: 80%;
+    }
+
+/* Order Form Styling */
+#orderForm {
+    margin: 0 auto;
+}
+
+/* About styling */
+.aboutImg {
+    height: 500px;
+    float: left;
+}
+Status API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Security Contact Help

@@ -22,7 +22,7 @@ $(document).ready(function() {
       });
 
     } else if (partial === "fleetPage") {
-      $.getJSON("jsonDatabase/car.json",function(data){
+      $.getJSON("jsonDatabase/final.json",function(data){
           console.dir(data);
 
           var html = "";

@@ -22,41 +22,40 @@ $(document).ready(function() {
       });
 
     } else if (partial === "fleetPage") {
-      $.getJSON("jsonDatabase/final.json",function(data){
-          console.dir(data);
+      $.getJSON("jsonDatabase/final.json", function(data) {
+        console.dir(data);
 
-          var html = "";
-          $.each(data, function(index, item){
-          html += '<div class="col-md-4 bun">' +
-              '<div class="carName">' +item.name+'</div>'+
-              '<div class="carType">' +item.type+'</div>'+
-              '<div class="carColour">' +item.colour+'</div>'+
-              '<img class="carImg" src="'+item.image + '"/>'+
-              '<div class="commentsContainer">';
-              $.each(item.comments, function(index, item){
-              html += '<div class="renterName">' + item.username + '</div>' +
+        var html = "";
+        $.each(data, function(index, item) {
+          html += '<div class="col-md-4 col-xs-8 col-lg-4 col-sm-4 mov">' +
+            '<div class="carName">' + item.name + '</div>' +
+            '<div class="carType">' + item.type + '</div>' +
+            '<div class="carColour">' +item.colour+'</div>'+
+            '<img class="carImg" src="' + item.image + '"/>' +
+            '<div class="commentsContainer">';
+          $.each(item.comments, function(index, item) {
+            html += '<div class="renterName">' + item.username + '</div>' +
               '<div class="renterComment">' + item.comment + '</div>' +
               '<div class="renterStars">';
 
-              var numStars = Number(item.stars)
+            var numStars = Number(item.stars);
 
-              for (var i = 1; i<= 5; i++){
-                  if (i <=numStars) {
-                   html+='<img src="images/starF.png">';
-                  }
-                  else {
-                   html+='<img src="images/starE.png">';
-                  }
+            for (var i = 1; i <= 5; i++) {
+              if (i <= numStars) {
+                html += '<img src="images/starF.png">';
+              } else {
+                html += '<img src="images/starE.png">';
               }
-                  html +='</div>'; //end stars
-              }) //each comment
+            }
+            html += '</div>'; //end stars
+          }); //each comment
+
           //do some stuff
           html += '</div>' + //commentsContainer
-               '</div>'; //col-md-4
-          }) //each cat
-          $("#carData").append(html);
-      })
-  })
+            '</div>'; //col-md-4
+        }); //each cat
+        $("#pageContent").html(html);
+      }); // end
 
       // ORDER PAGE STARTS
 

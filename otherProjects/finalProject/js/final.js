@@ -30,8 +30,8 @@ $(document).ready(function() {
           html += '<div class="col-md-4 col-xs-8 col-lg-4 col-sm-4 mov">' +
             '<div class="carName">' + item.name + '</div>' +
             '<div class="carType">' + item.type + '</div>' +
+            '<div class="carColour">' +item.colour+'</div>'+
             '<img class="carImg" src="' + item.image + '"/>' +
-            '<div class="mcarSum">' + item.summary + '</div>' +
             '<div class="commentsContainer">';
           $.each(item.comments, function(index, item) {
             html += '<div class="renterName">' + item.username + '</div>' +

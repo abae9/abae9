@@ -84,15 +84,15 @@
 "type":"Small-Sedan",
 "image":"images/focus.png",
 "summary":"",
-"comments" : [{"username":"Joy",
-              "stars": 5,
-              "comment": "It shows kids about mental illness better."
-              },{"username":"Light",
-              "stars": 3,
-              "comment": "A good spin on a heavy topic"
-              },{"username":"More",
+"comments" : [{"username":"fordfj2",
               "stars": 4,
-              "comment": "They should make more shows similar to this"
+              "comment": "I like this car"
+              },{"username":"329gngs",
+              "stars": 2,
+              "comment": "Feels cheap and worn out"
+              },{"username":"vbghw294",
+              "stars": 4,
+              "comment": "Does its job"
               }]
  },
 {
@@ -100,15 +100,15 @@
 "type":"Compact",
 "image":"images/spark.png",
 "summary":"",
-"comments" : [{"username":"Dorthy",
+"comments" : [{"username":"fbv9355",
               "stars": 4,
-              "comment": "I could watch it again annd it would be like the first time."
-              },{"username":"Big Ocean",
+              "comment": "Super easy to drive in the city."
+              },{"username":"sparky",
               "stars": 3,
-              "comment": "A fun movie for the kids to enjoy"
-              },{"username":"Fish",
+              "comment": "Small but very underpowered. Do not recommend for long highway driving."
+              },{"username":"biglow205",
               "stars": 5,
-              "comment": "Amazing work on the animation."
+              "comment": "Best car for commuting in the city!"
               }]
 
  }]

@@ -4,15 +4,15 @@
 "type":"Mid-Sedan",
 "image":"images/328i.png",
 "summary":"",
-"comments" : [{"username":"Judy",
+"comments" : [{"username":"Bimmer",
               "stars": 5,
-              "comment": "I didn't believe I'd love it as much as I would."
-              },{"username":"NimbleYew",
+              "comment": "Love this car!"
+              },{"username":"ht2023",
               "stars": 5,
-              "comment": "One of the best animation films that wasn't what I expected it to be."
-              },{"username":"Sister",
-              "stars": 5,
-              "comment": "A great movie for all ages to enjoy, I'm 21 and I found myself 10 again."
+              "comment": "Fast Car!"
+              },{"username":"bret89",
+              "stars": 4,
+              "comment": "Littlebit worn out but still a great car!"
               }]
 },
 {
@@ -20,15 +20,15 @@
 "type":"Mid-Sedan",
 "image":"images/accord.png",
 "summary":"Roomy and high-quality interior; refined and efficient powertrains; quick acceleration; responsive handling; available coupe body style.",
-"comments" : [{"username":"Eve",
+"comments" : [{"username":"Smoothrider",
               "stars": 5,
-              "comment": "Finding love in a desolate place called space."
-              },{"username":"Onion Ninja",
+              "comment": "Rides smoooth."
+              },{"username":"familyman",
               "stars": 4,
-              "comment": "I couldn't believe I had tears in my eyes."
-              },{"username":"Robit",
+              "comment": "Very nice car! Wish it came with a different colour!"
+              },{"username":"vtecvroom",
               "stars": 5,
-              "comment": "WALLLLLL-EEEE"
+              "comment": "I love all Hondas!"
               }]
 },
 {
@@ -36,15 +36,15 @@
 "type":"Sport",
 "image":"images/brz.png",
 "summary":"Not only is the graceful coupe a surprise from bland Subaru, it also is a knockout on the street, yanking heads around in double-takes the whole test period.",
-"comments" : [{"username":"Carl",
+"comments" : [{"username":"Subaruwrxfan",
               "stars": 5,
-              "comment": "I didn't know I'd cry about the romance in here, it brough the story to life."
-              },{"username":"Touched",
+              "comment": "I love Subarus!"
+              },{"username":"ben04124",
               "stars": 4,
-              "comment": "It brough me to places I didn't think a child's movie could."
-              },{"username":"Soul",
-              "stars": 5,
-              "comment": "Finding a place where you belong i na world that isn't made for you."
+              "comment": "Fun to drive, but lacks space."
+              },{"username":"ilovefastcars",
+              "stars": 3,
+              "comment": "Very underpowered sports car."
               }]
  },
 {
@@ -68,15 +68,15 @@
 "type":"Mid-SUV",
 "image":"images/equinox.png",
 "summary":"Premium look inside and out; strong optional V6 engine; quiet interior; comfortable highway ride; spacious and adjustable backseat.",
-"comments" : [{"username":"Emmet",
+"comments" : [{"username":"beatrice021",
               "stars": 5,
-              "comment": "Finding the special inside you"
-              },{"username":"Lovely",
-              "stars": 4,
-              "comment": "Honestly worth a watch for the awesome song."
-              },{"username":"10 Times",
-              "stars": 5,
-              "comment": "Watched it that many times."
+              "comment": "Best family suv ever!"
+              },{"username":"twofortwo",
+              "stars": 2,
+              "comment": "It was a good car until it started having engine problems..."
+              },{"username":"suvlover",
+              "stars": 3,
+              "comment": "Not the best but does what it does."
               }]
  },
 {

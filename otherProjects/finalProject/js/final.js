@@ -27,7 +27,7 @@ $(document).ready(function() {
 
         var html = "";
         $.each(data, function(index, item) {
-          html += '<div class="col-md-4 col-xs-8 col-lg-4 col-sm-4 mov">' +
+          html += '<div class="col-md-4 car">' +
             '<div class="carName">' + item.name + '</div>' +
             '<div class="carType">' + item.type + '</div>' +
             '<div class="carColour">' +item.colour+'</div>'+
@@ -53,7 +53,7 @@ $(document).ready(function() {
           //do some stuff
           html += '</div>' + //commentsContainer
             '</div>'; //col-md-4
-        }); //each cat
+        }); //each car
         $("#pageContent").html(html);
       }); // end
 
